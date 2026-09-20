@@ -10,6 +10,8 @@ Right now, the project is in the requirements and data discovery phase. We are w
 
 The main dashboard will be designed for GSO Leadership and Marketing.
 
+## Data Sources
+
 ### Mailchimp
 Mailchimp is currently the main priority for the project. We plan to look at email campaign information such as opens, clicks, click rates, links clicked, bounces, unsubscribes, and campaign dates.
 
