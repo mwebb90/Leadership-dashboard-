@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSO Executive Overview</title>
+</head>
+<body>
+  <header>
+    <h1>Executive Overview</h1>
+    <p>Georgia Symphony Orchestra Leadership Dashboard</p>
+  </header>
+  <main>
+    <section class="filters">
+      <h2>Dashboard Filters</h2>
+      <select id="dateRange">
+        <option>All Dates</option>
+        <option>Last 7 Days</option>
+        <option>Last 30 Days</option>
+        <option>Last 90 Days</option>
+      </select>
+    </section>
+    <section class="kpi-container">
+      <h2>Performance Overview</h2>
+      <div class="kpi-card">
+        <h3>Website Visitors</h3>
+        <p id="visitors">12,450</p>
+      </div>
+      <div class="kpi-card">
+        <h3>Email Open Rate</h3>
+        <p id="emailRate">42%</p>
+      </div>
+      <div class="kpi-card">
+        <h3>Ticket-Page Clicks</h3>
+        <p id="ticketClicks">3,280</p>
+      </div>
+      <div class="kpi-card">
+        <h3>Tickets Sold</h3>
+        <p id="ticketsSold">1,850</p>
+      </div>
+    </section>
+    <section class="chart-container">
+      <h2>Website Visitors by Reporting Period</h2>
+      <canvas id="visitorChart"></canvas>
+    </section>
+    <section class="takeaways">
+      <h2>Quick Takeaways</h2>
+      <p>Dashboard insights will appear here.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Georgia Symphony Orchestra | Demo Dashboard</p>
+  </footer>
+</body>
+
+</html>
