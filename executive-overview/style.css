@@ -1,0 +1,149 @@
+/* GSO Executive Overview Dashboard */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 35px;
+  background-color: #f8f3e5;
+  color: #30382e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Dashboard Header */
+header {
+  margin-bottom: 25px;
+}
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+header p {
+  color: #6d7568;
+  font-size: 15px;
+}
+/* Dropdown Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.filters h2 {
+  width: 100%;
+  font-size: 16px;
+}
+select {
+  padding: 12px 16px;
+  border: 1px solid #e4dfd2;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #42483e;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* KPI Cards */
+.kpi-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+.kpi-container h2 {
+  grid-column: 1 / -1;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.kpi-card {
+  padding: 25px 15px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+.kpi-card:hover {
+  transform: translateY(-5px);
+}
+.kpi-card h3 {
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+.kpi-card p {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+/* Canva-Inspired KPI Colors */
+.kpi-card:nth-of-type(1) {
+  background-color: #f4ad79;
+}
+.kpi-card:nth-of-type(2) {
+  background-color: #f9e66b;
+}
+.kpi-card:nth-of-type(3) {
+  background-color: #a9d88e;
+}
+.kpi-card:nth-of-type(4) {
+  background-color: #f4ad79;
+}
+/* Website Visitors Chart */
+.chart-container {
+  background-color: #fffdf8;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.chart-container h2 {
+  font-size: 19px;
+  text-align: center;
+}
+#visitorChart {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+}
+/* Quick Takeaways */
+.takeaways {
+  background-color: #ffffff;
+  border: 1px solid #d6e2d2;
+  border-radius: 25px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.takeaways h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.takeaways p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #8a9184;
+  padding: 20px;
+}
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .kpi-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  body {
+    padding: 18px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  .kpi-container {
+    grid-template-columns: 1fr;
+  }
+  select {
+    width: 100%;
+  }
+
+}
