@@ -12,15 +12,40 @@
     <p>Georgia Symphony Orchestra Leadership Dashboard</p>
   </header>
   <main>
-    <section class="filters">
-      <h2>Dashboard Filters</h2>
-      <select id="dateRange">
-        <option>All Dates</option>
-        <option>Last 7 Days</option>
-        <option>Last 30 Days</option>
-        <option>Last 90 Days</option>
-      </select>
-    </section>
+<section class="filters">
+  <h2>Dashboard Filters</h2>
+  <select id="dateRange">
+    <option value="all">All Dates</option>
+    <option value="7">Last 7 Days</option>
+    <option value="30">Last 30 Days</option>
+    <option value="90">Last 90 Days</option>
+  </select>
+  <select id="campaign">
+    <option value="all">All Campaigns</option>
+    <option value="fall">Fall Concert Series</option>
+    <option value="holiday">Holiday Campaign</option>
+    <option value="community">Community Outreach</option>
+  </select>
+  <select id="webpage">
+    <option value="all">All Webpages</option>
+    <option value="home">Homepage</option>
+    <option value="events">Events Page</option>
+    <option value="tickets">Tickets Page</option>
+  </select>
+  <select id="trafficSource">
+    <option value="all">All Traffic Sources</option>
+    <option value="social">Social Media</option>
+    <option value="search">Organic Search</option>
+    <option value="email">Email</option>
+    <option value="direct">Direct Traffic</option>
+  </select>
+  <select id="email">
+    <option value="all">All Emails</option>
+    <option value="newsletter">Newsletter</option>
+    <option value="promotion">Promotional Emails</option>
+    <option value="reminder">Event Reminders</option>
+  </select>
+</section>
     <section class="kpi-container">
       <h2>Performance Overview</h2>
       <div class="kpi-card">
